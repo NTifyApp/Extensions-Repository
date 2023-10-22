@@ -3,9 +3,6 @@
 		"EXTENSIONS" : [
 		{
 			"LOCATION" : "/repo/Hello-Werwolf2303-1.0.json"
-		},
-		{
-			"LOCATION" : "/repo/DeprecatedThemes-Werwolf2303-1.0.json"
 		}
 		]
 	}
