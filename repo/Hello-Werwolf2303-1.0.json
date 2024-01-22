@@ -1,9 +1,11 @@
 {
-	"NAME" : "Hello",
-	"AUTHOR" : "Werwolf2303",
-	"VERSION" : "1.0",
-	"DESCRIPTION" : "Test extension for testing extension functionality",
-	"FILE" : "/repo/storage/Hello-Werwolf2303-1.0.jar",
-	"IDENTIFIER" : "000001",
-	"MINVERSION" : "1.9"
+	"name" : "Hello",
+	"author" : "Werwolf2303",
+	"version" : "1.0",
+	"description" : "Test extension for testing extension functionality",
+	"location" : "/storage/Hello-Werwolf2303-1.0.jar",
+	"identifier" : "000001",
+	"minversion" : "1.9",
+	"dependencies": [
+	]
 }
