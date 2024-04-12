@@ -3,7 +3,7 @@
 	"author" : "Werwolf2303",
 	"version" : "1.0",
 	"description" : "Test extension for testing extension functionality",
-	"location" : "/storage/Hello-Werwolf2303-1.0.jar",
+	"location" : "/storage/Hello-Werwolf2303.jar",
 	"identifier" : "000001",
 	"minversion" : "1.9",
 	"dependencies": [
