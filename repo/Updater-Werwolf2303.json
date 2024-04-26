@@ -1,0 +1,11 @@
+{
+	"name" : "Updater",
+	"author" : "Werwolf2303",
+	"version" : "1.0",
+	"description" : "Ability to update SpotifyXP with one click (Only stable releases)",
+	"location" : "/storage/Updater-Werwolf2303.jar",
+	"identifier" : "000003",
+	"minversion" : "2.0.3",
+	"dependencies": [
+	]
+}
