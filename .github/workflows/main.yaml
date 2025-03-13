@@ -14,9 +14,11 @@ jobs:
         working-directory: ./SpotifyXP-Repository
         run: python3 generate_repo.py
       - name: Make public directory
+        working-directory: ./SpotifyXP-Repository
         run: mkdir public
       - name: Copy files to public directory
-        run: cp -R SpotifyXP-Repository/repo public/
+        working-directory: ./SpotifyXP-Repository
+        run: cp -R repo public/
       - name: Upload to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
