@@ -1,0 +1,11 @@
+{
+	"name" : "MSNStatus",
+	"author" : "Werwolf2303",
+	"version" : "0.0.1",
+	"description" : "MSNStatus support",
+	"location" : "/storage/MSNStatusSupport-Werwolf2303.jar",
+	"identifier" : "000003",
+	"minversion" : "2.0.3",
+	"dependencies": [
+	]
+}
