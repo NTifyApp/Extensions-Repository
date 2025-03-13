@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import http.server as SimpleHTTPServer
 import socketserver as SocketServer
 import logging

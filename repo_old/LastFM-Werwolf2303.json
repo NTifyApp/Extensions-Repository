@@ -1,0 +1,11 @@
+{
+	"name" : "LastFM",
+	"author" : "Werwolf2303",
+	"version" : "1.0",
+	"description" : "Last.FM functionality",
+	"location" : "/storage/LastFM-Werwolf2303.jar",
+	"identifier" : "000002",
+	"minversion" : "2.0.3",
+	"dependencies": [
+	]
+}

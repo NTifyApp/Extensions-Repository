@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Jar extension dependency descriptor",
+  "description": "This document describes a dependency of an extension packaged in a jar",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name of the extension",
+      "type": "string"
+    },
+    "author": {
+      "description": "The author of the extension",
+      "type": "string"
+    },
+    "dependencies": {
+      "description": "List of dependencies of the dependency",
+      "type": "array",
+      "$ref": "jardependency.schema.json"
+    }
+  }
+}
