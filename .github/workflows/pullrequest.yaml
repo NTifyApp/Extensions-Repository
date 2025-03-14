@@ -9,5 +9,5 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.ref }}
-      - name: List files
-        run: ls -la
+      - name: Run generate_repo.py script
+        run: python3 generate_repo.py
