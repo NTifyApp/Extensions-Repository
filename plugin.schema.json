@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Jar extension descriptor",
+  "description": "This document describes an extension descriptor in a jar file",
+  "type": "object",
+  "properties": {
+    "main": {
+      "description": "The entry point of the extension",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the extension",
+      "type": "string"
+    },
+    "author": {
+      "description": "The author of the extension",
+      "type": "string"
+    },
+    "version": {
+      "description": "The version string of the extension e.g. 0.0.1",
+      "type": "string"
+    },
+    "description": {
+      "description": "The description for the extension",
+      "type": "string"
+    },
+    "identifier": {
+      "description": "The UUID 4 of the extension",
+      "type": "string"
+    },
+    "dependencies": {
+      "description": "List of dependencies of the dependency",
+      "type": "array",
+      "$ref": "jardependency.schema.json"
+    }
+  }
+}

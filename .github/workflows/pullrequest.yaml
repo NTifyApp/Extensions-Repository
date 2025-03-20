@@ -1,0 +1,13 @@
+name: "Pull request tester"
+
+on: pull_request
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Pull Request Branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Run generate_repo.py script
+        run: python3 generate_repo.py

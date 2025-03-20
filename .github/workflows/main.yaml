@@ -1,0 +1,26 @@
+name: "Repo publisher"
+
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        run: git clone --recursive --branch dev https://github.com/SpotifyXP/SpotifyXP-Repository
+      - name: Run generate_repo.py script
+        working-directory: ./SpotifyXP-Repository
+        run: python3 generate_repo.py
+      - name: Make public directory
+        working-directory: ./SpotifyXP-Repository
+        run: mkdir public
+      - name: Copy files to public directory
+        working-directory: ./SpotifyXP-Repository
+        run: cp -R repo public/
+      - name: Upload to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./SpotifyXP-Repository/public

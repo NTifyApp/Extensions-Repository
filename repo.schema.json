@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "name": "The descriptor of a repository",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name of the repository",
+      "type": "string"
+    },
+    "extensions": {
+      "description": "List of extensions in a repository",
+      "type": "array",
+      "properties": {
+        "location": {
+          "description": "The location of the extension json file relative to the repo folder"
+        }
+      }
+    }
+  }
+}
