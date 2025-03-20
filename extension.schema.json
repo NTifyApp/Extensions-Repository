@@ -28,10 +28,6 @@
       "description": "The UUID 4 of the extension",
       "type": "string"
     },
-    "minversion": {
-      "description": "The minimal commit id of SpotifyXP the extension requires",
-      "type": "string"
-    },
     "dependencies": {
       "description": "List of dependencies of the extension",
       "type": "array",
