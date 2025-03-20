@@ -21,22 +21,21 @@ def compile_jar(dir, PLUGIN_JSON):
     proc = subprocess.call("./" + BUILD_SCRIPT, cwd=EXTENSIONS_LOCATION + "/" + dir, shell=True)
     if proc != 0:
         print("Failed to build " + dir)
-        sys.exit(-1)
+        return
     if os.path.exists(EXTENSIONS_LOCATION + "/" + dir + "/build.gradle"):
         JAR_PATH = EXTENSIONS_LOCATION + "/" + dir + "/build/libs/" + dir + ".jar"
         if not os.path.exists(JAR_PATH):
             print("Couldn't find jar file in '" + JAR_PATH + "'")
-            sys.exit(-1)
+            return
         shutil.copyfile(JAR_PATH, JARS_LOCATION + "/" + dir + "-" + PLUGIN_JSON["author"] + ".jar")
     elif os.path.exists(EXTENSIONS_LOCATION + "/" + dir + "/pom.xml"):
         JAR_PATH = EXTENSIONS_LOCATION + "/" + dir + "/target/" + dir + ".jar"
         if not os.path.exists(JAR_PATH):
             print("Couldn't find jar file in '" + JAR_PATH + "'")
-            sys.exit(-1)
+            return
         shutil.copyfile(JAR_PATH, JARS_LOCATION + "/" + dir + "-" + PLUGIN_JSON["author"] + ".jar")
     else:
         print("Extension named '" + dir + "' doesn't contain a recognized build system")
-        sys.exit(-1)
 
 def extract_extension_descriptor(dir):
     PLUGIN_JSON_PATH = EXTENSIONS_LOCATION + "/" + dir + "/src/main/resources/plugin.json"
@@ -103,7 +102,6 @@ file.close()
 for dependency in DEPENDENCIES:
     if not os.path.exists(dependency["location"]):
         print("Couldn't find dependency '" + dependency["name"] + " from " + dependency["author"] + "'")
-        sys.exit(-1)
 
 
 
