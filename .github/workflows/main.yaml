@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone Repository
-        run: git clone --recursive --branch dev https://github.com/SpotifyXP/SpotifyXP-Repository
+        run: git clone --recursive https://github.com/SpotifyXP/SpotifyXP-Repository
       - name: Run generate_repo.py script
         working-directory: ./SpotifyXP-Repository
         run: python3 generate_repo.py
