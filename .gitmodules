@@ -1,6 +1,3 @@
 [submodule "extensions/MSNStatusSupport"]
 	path = extensions/MSNStatusSupport
 	url = https://github.com/SpotifyXP/MSNStatusSupport
-[submodule "extensions/SpotifyXP-Last.FM"]
-	path = extensions/SpotifyXP-Last.FM
-	url = https://github.com/SpotifyXP/SpotifyXP-Last.FM

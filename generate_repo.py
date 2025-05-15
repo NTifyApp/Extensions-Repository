@@ -11,7 +11,7 @@ ROOT_LOCATION = "repo/repo.json"
 JARS_LOCATION = "repo/storage"
 EXTENSIONS_LOCATION = "extensions"
 BUILD_SCRIPT = "build.sh" # e.g. extensions/MSNStatusSupport/build.sh
-SPXP_JAR_URL = "https://github.com/SpotifyXP/SpotifyXP/releases/latest/download/SpotifyXP.jar"
+SPXP_JAR_URL = "https://github.com/NTifyApp/NTify/releases/latest/download/NTify.jar"
 REPO_PATH = "repo"
 DEPENDENCIES = []
 
@@ -62,14 +62,14 @@ else:
 if not os.path.exists(JARS_LOCATION):
     os.makedirs(JARS_LOCATION)
 
-# 2. Download the newest SpotifyXP.jar
-if not os.path.exists(EXTENSIONS_LOCATION + "/SpotifyXP.jar"):
-    print("Downloading SpotifyXP")
-    urllib.request.urlretrieve(SPXP_JAR_URL, EXTENSIONS_LOCATION + "/SpotifyXP.jar")
+# 2. Download the newest NTify.jar
+if not os.path.exists(EXTENSIONS_LOCATION + "/NTify.jar"):
+    print("Downloading NTify")
+    urllib.request.urlretrieve(SPXP_JAR_URL, EXTENSIONS_LOCATION + "/NTify.jar")
 
 # 3. Create repo.json
 REPO_JSON = {
-    "name": "SpotifyXP-Repository",
+    "name": "Extensions-Repository",
     "extensions": [
     ]
 }
