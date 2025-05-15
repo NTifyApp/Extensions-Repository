@@ -1,5 +1,2 @@
-# SpotifyXP-Repo
- Repository for SpotifyXP extensions
-
-
-* [About](https://wwww.google.de)
+# Extensions-Repo
+ Repository for NTify extensions
