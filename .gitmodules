@@ -1,3 +1,6 @@
 [submodule "extensions/MSNStatusSupport"]
 	path = extensions/MSNStatusSupport
 	url = https://github.com/SpotifyXP/MSNStatusSupport
+[submodule "extensions/NTify-Last.FM"]
+	path = extensions/NTify-Last.FM
+	url = https://github.com/NTifyApp/NTify-Last.FM
